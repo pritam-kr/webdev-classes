@@ -260,23 +260,6 @@ export const pricingPlans = [
       "Portfolio development support",
     ],
   },
-  {
-    name: "AI Tools Bootcamp",
-    price: "₹3,000",
-    originalPrice: "₹8,000",
-    popular: false,
-    enrollLink: "https://forms.gle/w7gp9m3h1vMNinfy5",
-    features: [
-      "1 month intensive program",
-      "Master ChatGPT for coding",
-      "GitHub Copilot advanced techniques",
-      "AI debugging and optimization",
-      "Prompt engineering for developers",
-      "Live coding sessions",
-      "Practical assignments",
-      "Certificate of completion",
-    ],
-  },
 ]
 
 export const returnPolicy = {
