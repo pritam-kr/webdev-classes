@@ -1,5 +1,4 @@
 import Hero from "@/components/hero"
-import FeaturedCourses from "@/components/featured-courses"
 import LiveClassFeatures from "@/components/live-class-features"
 import AIToolsSection from "@/components/ai-tools-section"
 import LearningPath from "@/components/learning-path"
@@ -10,7 +9,6 @@ export default function HomePage() {
   return (
     <main>
       <Hero />
-      <FeaturedCourses />
       <LiveClassFeatures />
       <AIToolsSection />
       <LearningPath />
