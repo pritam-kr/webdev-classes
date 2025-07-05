@@ -1,76 +1,95 @@
-import { courses } from "@/data/content"
+import { Star, Users, Clock, Award, Zap } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Clock, Users, Star } from "lucide-react"
-import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { courses } from "@/data/content"
 
 export default function FeaturedCourses() {
-  const course = courses[0]
-
   return (
-    <section className="py-16 bg-muted/30">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Featured Course</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Courses</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Choose from our comprehensive web development programs designed to make you job-ready
+          </p>
+        </div>
 
-          <Card className="overflow-hidden">
-            <div className="grid lg:grid-cols-2">
-              <div className="p-8">
-                <CardHeader className="p-0 mb-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="secondary">Full Stack</Badge>
-                    <Badge variant="outline">Beginner Friendly</Badge>
-                  </div>
-                  <CardTitle className="text-2xl mb-2">{course.title}</CardTitle>
-                  <p className="text-muted-foreground">{course.description}</p>
-                </CardHeader>
-
-                <CardContent className="p-0">
-                  <div className="flex items-center gap-6 mb-6 text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Clock className="w-4 h-4" />
-                      <span>12 weeks</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      <span>500+ students</span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <Star className="w-4 h-4 fill-current text-yellow-500" />
-                      <span>4.9/5</span>
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <h4 className="font-semibold mb-3">What you'll learn:</h4>
-                    <ul className="space-y-1 text-sm">
-                      <li>• Build responsive websites with HTML, CSS & JavaScript</li>
-                      <li>• Create dynamic apps with React and modern frameworks</li>
-                      <li>• Master AI tools like ChatGPT, GitHub Copilot & Claude</li>
-                      <li>• Use AI to write better code 10x faster</li>
-                      <li>• Integrate APIs and work with databases</li>
-                      <li>• Deploy projects and build your portfolio</li>
-                    </ul>
-                  </div>
-
-                  <Button asChild className="w-full">
-                    <Link href="/courses">View Full Curriculum</Link>
-                  </Button>
-                </CardContent>
-              </div>
-
-              <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-4xl">🚀</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Start Building Today</h3>
-                  <p className="text-muted-foreground">Join hundreds of students already learning</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {courses.map((course) => (
+            <Card key={course.id} className="relative overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {course.badge && (
+                <div className="absolute top-4 right-4 z-10">
+                  <Badge variant={course.badge === "Most Popular" ? "default" : "secondary"}>{course.badge}</Badge>
                 </div>
-              </div>
-            </div>
-          </Card>
+              )}
+
+              {course.aiIntegrated && (
+                <div className="absolute top-4 left-4 z-10">
+                  <Badge variant="outline" className="bg-purple-100 text-purple-700 border-purple-300">
+                    <Zap className="w-3 h-3 mr-1" />
+                    AI Integrated
+                  </Badge>
+                </div>
+              )}
+
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl font-bold mb-2">{course.title}</CardTitle>
+                <p className="text-gray-600 text-sm">{course.description}</p>
+
+                <div className="flex items-center gap-4 text-sm text-gray-500 mt-4">
+                  <div className="flex items-center gap-1">
+                    <Users className="w-4 h-4" />
+                    {course.students}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Clock className="w-4 h-4" />
+                    {course.duration}
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    {course.rating}
+                  </div>
+                </div>
+              </CardHeader>
+
+              <CardContent className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <span className="text-3xl font-bold text-blue-600">{course.price}</span>
+                  <span className="text-lg text-gray-500 line-through">{course.originalPrice}</span>
+                  <Badge variant="destructive" className="text-xs">
+                    {Math.round(
+                      (1 -
+                        Number.parseInt(course.price.replace("₹", "").replace(",", "")) /
+                          Number.parseInt(course.originalPrice.replace("₹", "").replace(",", ""))) *
+                        100,
+                    )}
+                    % OFF
+                  </Badge>
+                </div>
+
+                <div className="space-y-3">
+                  <h4 className="font-semibold text-sm text-gray-900">Key Features:</h4>
+                  <ul className="space-y-2">
+                    {course.features.slice(0, 4).map((feature, index) => (
+                      <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
+                        <Award className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="pt-4 border-t">
+                  <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                    <a href="https://forms.gle/w7gp9m3h1vMNinfy5" target="_blank" rel="noopener noreferrer">
+                      Enroll Now
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

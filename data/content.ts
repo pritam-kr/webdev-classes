@@ -84,6 +84,99 @@ export const pricingPlans = [
   },
 ]
 
+export const courses = [
+  {
+    id: 1,
+    title: "Complete Web Development Program",
+    description: "Master HTML, CSS, JavaScript, React, and AI tools in 4-5 months with live classes",
+    price: "₹8,000",
+    originalPrice: "₹15,000",
+    duration: "4-5 months",
+    level: "Beginner to Advanced",
+    students: "500+",
+    rating: 4.9,
+    features: [
+      "Live Interactive Classes on Google Meet",
+      "AI Tools Integration (ChatGPT, GitHub Copilot)",
+      "Real Projects & Portfolio Building",
+      "PDF Notes & Assignments",
+      "Job Placement Assistance",
+      "Lifetime Access to Materials",
+    ],
+    curriculum: [
+      "HTML5 & Semantic Web",
+      "CSS3 & Responsive Design",
+      "JavaScript ES6+",
+      "React.js & Hooks",
+      "TypeScript Fundamentals",
+      "Tailwind CSS",
+      "AI Tools for Development",
+      "Git & GitHub",
+      "Project Deployment",
+    ],
+    badge: "Most Popular",
+    aiIntegrated: true,
+  },
+  {
+    id: 2,
+    title: "React Specialization",
+    description: "Deep dive into React ecosystem with modern tools and AI assistance",
+    price: "₹5,000",
+    originalPrice: "₹8,000",
+    duration: "2-3 months",
+    level: "Intermediate",
+    students: "200+",
+    rating: 4.8,
+    features: [
+      "Advanced React Patterns",
+      "State Management (Redux, Zustand)",
+      "AI-Powered Code Generation",
+      "Performance Optimization",
+      "Testing with Jest",
+      "Real-world Projects",
+    ],
+    curriculum: [
+      "React Hooks Deep Dive",
+      "Context API & State Management",
+      "React Router",
+      "Performance Optimization",
+      "Testing React Apps",
+      "AI Tools for React Development",
+    ],
+    badge: "Advanced",
+    aiIntegrated: true,
+  },
+  {
+    id: 3,
+    title: "AI Tools for Developers Bootcamp",
+    description: "Learn to leverage AI tools like ChatGPT, GitHub Copilot, and Claude for 10x productivity",
+    price: "₹3,000",
+    originalPrice: "₹5,000",
+    duration: "1 month",
+    level: "All Levels",
+    students: "300+",
+    rating: 4.9,
+    features: [
+      "ChatGPT for Code Generation",
+      "GitHub Copilot Mastery",
+      "Claude for Documentation",
+      "AI Debugging Techniques",
+      "Prompt Engineering",
+      "Workflow Automation",
+    ],
+    curriculum: [
+      "Introduction to AI Coding Tools",
+      "ChatGPT for Developers",
+      "GitHub Copilot Best Practices",
+      "Claude for Technical Writing",
+      "AI-Assisted Debugging",
+      "Building AI-Enhanced Workflows",
+    ],
+    badge: "New",
+    aiIntegrated: true,
+  },
+]
+
 export const roadmapData = {
   modules: [
     {
@@ -432,72 +525,61 @@ export const roadmapData = {
 
 export const testimonials = [
   {
+    id: 1,
     name: "Rahul Sharma",
     role: "Frontend Developer at TCS",
     content:
-      "The live classes were amazing! Pritam's teaching style is very clear and the hands-on projects helped me land my first job.",
+      "The live classes and AI tools integration made learning so much easier. I got placed within 3 months of completing the course!",
     rating: 5,
+    image: "/placeholder-user.jpg",
   },
   {
-    name: "Priya Singh",
+    id: 2,
+    name: "Priya Patel",
     role: "Full Stack Developer",
     content:
-      "Best investment I made for my career. The comprehensive curriculum and live doubt resolution made learning so much easier.",
+      "Best investment I made for my career. The instructor's teaching style and real-world projects helped me build a strong portfolio.",
     rating: 5,
+    image: "/placeholder-user.jpg",
   },
   {
+    id: 3,
     name: "Amit Kumar",
     role: "React Developer at Startup",
     content:
-      "From zero to hero in web development. The projects we built are now part of my portfolio and helped me get multiple job offers.",
+      "Learning AI tools alongside web development gave me a huge advantage. I'm now 10x more productive than before!",
     rating: 5,
+    image: "/placeholder-user.jpg",
   },
 ]
 
-export const returnPolicy = {
-  title: "Return & Refund Policy",
-  lastUpdated: "January 2025",
-  sections: [
-    {
-      title: "Refund Eligibility",
-      content: [
-        "Full refund available within 7 days of enrollment if no live classes have been attended",
-        "50% refund available within 14 days if less than 25% of the course has been completed",
-        "No refund after 30 days or if more than 50% of the course content has been accessed",
-        "Medical emergencies and exceptional circumstances will be considered on a case-by-case basis",
-      ],
-    },
-    {
-      title: "Refund Process",
-      content: [
-        "Submit refund request via email or WhatsApp with your enrollment details",
-        "Refund requests are processed within 5-7 business days",
-        "Refunds are issued to the original payment method",
-        "Processing fees (if any) may be deducted from the refund amount",
-      ],
-    },
-    {
-      title: "Course Transfer Policy",
-      content: [
-        "Students can transfer to the next batch within 30 days of enrollment",
-        "One-time batch transfer is allowed without additional charges",
-        "Transfer requests must be made at least 7 days before the new batch starts",
-        "Subject to availability in the requested batch",
-      ],
-    },
-    {
-      title: "What's Not Refundable",
-      content: [
-        "Course materials and PDF notes once downloaded",
-        "Completed assignments and project feedback",
-        "One-on-one mentoring sessions already conducted",
-        "Certificate fees (if applicable)",
-      ],
-    },
-  ],
-  contact: {
-    email: "pritamvr9@gmail.com",
-    phone: "+91-7004905025",
-    whatsapp: "https://wa.me/917004905025",
+export const learningPath = [
+  {
+    phase: 1,
+    title: "Foundation",
+    duration: "Month 1",
+    topics: ["HTML5", "CSS3", "JavaScript Basics", "AI Tools Introduction"],
+    description: "Build strong fundamentals with modern web technologies",
   },
-}
+  {
+    phase: 2,
+    title: "Intermediate",
+    duration: "Month 2-3",
+    topics: ["Advanced JavaScript", "React.js", "TypeScript", "GitHub Copilot"],
+    description: "Master modern frameworks and AI-assisted development",
+  },
+  {
+    phase: 3,
+    title: "Advanced",
+    duration: "Month 4",
+    topics: ["State Management", "Testing", "Deployment", "Portfolio Projects"],
+    description: "Build real-world applications and prepare for jobs",
+  },
+  {
+    phase: 4,
+    title: "Job Ready",
+    duration: "Month 5",
+    topics: ["Interview Prep", "System Design", "Open Source", "Job Applications"],
+    description: "Get placement assistance and land your dream job",
+  },
+]
