@@ -1,0 +1,503 @@
+export const aboutContent = {
+  title: "About WebDev Classes",
+  description: `We help beginners learn web development through structured, hands-on learning via live interactive classes. Our course is built to teach not just code, but real-world development skills. From building responsive websites to creating full-stack applications, you'll work on real projects that matter.`,
+  mission: "Make developers job-ready through live classes, projects, and modern tools.",
+  instructor: {
+    name: "Pritam Kumar",
+    bio: "Software Developer with experience in building scalable web applications and teaching modern frontend technologies. Currently working at Sellermate.ai, with previous experience at Ringover.",
+    experience: [
+      {
+        company: "Sellermate.ai",
+        position: "Software Developer",
+        duration: "01/2024 – present",
+        achievements: [
+          "Collaborated closely with the backend team to define APIs and ensure smooth feature integration",
+          "Built dynamic summary rows in MUI tables to show column-wise totals based on active filters",
+          "Developed a Campaign Manager to handle bulk operations on campaigns, targets, and search terms, with robust error handling — tested and optimized to support 5,000+ operations seamlessly",
+          "Integrated ApexCharts for visualizing insights via interactive graphs and synced data tables",
+          "Implemented custom filters aligned with MUI's default filtering system for advanced table filtering",
+          "Created UI to showcase AI-driven recommendations for user actions",
+          "Used GraphQL for efficient data fetching and mutations",
+          "Solved several critical production bugs related to UI, performance, and state management",
+        ],
+      },
+      {
+        company: "Ringover",
+        position: "Front-end Developer",
+        duration: "10/2022 – 12/2023",
+        achievements: [
+          "Developed responsive web applications using React.js and modern JavaScript",
+          "Collaborated with cross-functional teams for high-quality user experiences",
+          "Optimized application performance and implemented code quality best practices",
+          "Integrated APIs and worked with backend teams for seamless data flow",
+          "Mentored junior developers and conducted code reviews",
+          "Implemented automated testing strategies to improve code reliability",
+        ],
+      },
+    ],
+    social: {
+      twitter: "https://x.com/Pritamkr_",
+      linkedin: "https://www.linkedin.com/in/pritam-kumar-0ab3431bb/",
+      github: "https://github.com/pritam-kr",
+      portfolio: "https://pritam-kumar.vercel.app/",
+    },
+  },
+}
+
+export const contactInfo = {
+  email: "pritamvr9@gmail.com",
+  phone: "+91-7004905025",
+  whatsapp: "https://wa.me/917004905025",
+  social: {
+    instagram: "https://instagram.com/un.filteredblog",
+    linkedin: "https://www.linkedin.com/in/pritam-kumar-0ab3431bb/",
+    twitter: "https://x.com/Pritamkr_",
+    github: "https://github.com/pritam-kr",
+    portfolio: "https://pritam-kumar.vercel.app/",
+  },
+  formFields: ["name", "email", "message"],
+}
+
+export const pricingPlans = [
+  {
+    name: "Complete Live Program",
+    price: "₹8,000",
+    originalPrice: "₹25,000",
+    features: [
+      "4-5 months comprehensive program",
+      "Live interactive classes via Google Meet",
+      "HTML, CSS, Tailwind, JavaScript, TypeScript, React",
+      "AI Tools Integration (ChatGPT, GitHub Copilot, Claude)",
+      "10+ hands-on projects for portfolio",
+      "Pre-read and post-read assignments",
+      "PDF notes for each topic",
+      "Git, GitHub, and open source training",
+      "Career guidance and job preparation",
+      "Small batch sizes (max 15 students)",
+      "Real-time doubt resolution",
+      "WhatsApp support group",
+      "Certificate of completion",
+      "Lifetime access to course materials",
+    ],
+    popular: true,
+    enrollLink: "https://forms.gle/w7gp9m3h1vMNinfy5",
+  },
+]
+
+export const roadmapData = {
+  modules: [
+    {
+      id: "html-fundamentals",
+      title: "HTML Fundamentals",
+      description: "Master semantic HTML and build solid foundation for web development",
+      duration: "2-3 weeks",
+      icon: "html",
+      topics: [
+        "HTML5 semantic elements and structure",
+        "Forms, inputs, and validation",
+        "Tables, lists, and media elements",
+        "Accessibility best practices",
+        "SEO-friendly HTML structure",
+        "HTML5 APIs and modern features",
+      ],
+      projects: [
+        "Personal portfolio webpage",
+        "Contact form with validation",
+        "Responsive image gallery",
+        "Accessible navigation menu",
+      ],
+      assignments: {
+        preRead: "HTML basics, semantic elements overview, accessibility guidelines",
+        postRead: "Advanced HTML5 features, ARIA attributes, performance optimization",
+        liveAssignments: [
+          "Build a semantic blog post layout",
+          "Create accessible forms with proper validation",
+          "Design a responsive navigation system",
+        ],
+        pdfNotes: "Complete HTML5 reference guide with examples and best practices",
+      },
+    },
+    {
+      id: "css-mastery",
+      title: "CSS Mastery",
+      description: "Learn modern CSS techniques, layouts, and responsive design principles",
+      duration: "3-4 weeks",
+      icon: "css",
+      topics: [
+        "CSS Grid and Flexbox layouts",
+        "Responsive design and media queries",
+        "CSS animations and transitions",
+        "CSS variables and custom properties",
+        "Modern CSS features (clamp, min, max)",
+        "CSS architecture and methodologies",
+      ],
+      projects: [
+        "Responsive landing page clone",
+        "CSS Grid dashboard layout",
+        "Animated portfolio website",
+        "Mobile-first responsive design",
+      ],
+      assignments: {
+        preRead: "CSS fundamentals, box model, positioning concepts",
+        postRead: "Advanced CSS techniques, performance optimization, browser compatibility",
+        liveAssignments: [
+          "Create a responsive card component",
+          "Build animated navigation menu",
+          "Design mobile-first layout system",
+        ],
+        pdfNotes: "Comprehensive CSS guide with layout patterns and animation examples",
+      },
+    },
+    {
+      id: "tailwind-css",
+      title: "Tailwind CSS",
+      description: "Master utility-first CSS framework for rapid UI development",
+      duration: "2 weeks",
+      icon: "css",
+      topics: [
+        "Tailwind CSS fundamentals and setup",
+        "Utility classes and responsive design",
+        "Customizing Tailwind configuration",
+        "Component patterns with Tailwind",
+        "Dark mode implementation",
+        "Performance optimization techniques",
+      ],
+      projects: [
+        "Modern dashboard with Tailwind",
+        "E-commerce product page",
+        "Dark/light theme toggle",
+        "Responsive component library",
+      ],
+      assignments: {
+        preRead: "Utility-first CSS concepts, Tailwind documentation overview",
+        postRead: "Advanced Tailwind patterns, custom plugin development",
+        liveAssignments: [
+          "Build responsive card components",
+          "Create dark mode toggle system",
+          "Design mobile-first navigation",
+        ],
+        pdfNotes: "Tailwind CSS cheat sheet with common patterns and best practices",
+      },
+    },
+    {
+      id: "javascript-programming",
+      title: "JavaScript Programming",
+      description: "Master modern JavaScript, DOM manipulation, and asynchronous programming",
+      duration: "4-5 weeks",
+      icon: "javascript",
+      topics: [
+        "ES6+ features and modern syntax",
+        "DOM manipulation and event handling",
+        "Asynchronous JavaScript (Promises, async/await)",
+        "Fetch API and HTTP requests",
+        "Local storage and browser APIs",
+        "Error handling and debugging techniques",
+      ],
+      projects: [
+        "Interactive todo application",
+        "Weather app with API integration",
+        "Image gallery with search",
+        "Real-time chat interface",
+      ],
+      assignments: {
+        preRead: "JavaScript basics, variables, functions, and control structures",
+        postRead: "Advanced JavaScript patterns, performance optimization, testing",
+        liveAssignments: [
+          "Build interactive form validation",
+          "Create dynamic content loader",
+          "Implement local storage functionality",
+        ],
+        pdfNotes: "Modern JavaScript reference with ES6+ features and best practices",
+      },
+    },
+    {
+      id: "typescript-fundamentals",
+      title: "TypeScript Fundamentals",
+      description: "Add type safety to JavaScript and learn modern development practices",
+      duration: "3 weeks",
+      icon: "javascript",
+      topics: [
+        "TypeScript basics and type annotations",
+        "Interfaces, types, and generics",
+        "Classes and object-oriented programming",
+        "Modules and namespace organization",
+        "TypeScript with React integration",
+        "Advanced types and utility types",
+      ],
+      projects: [
+        "Typed todo application",
+        "TypeScript React components",
+        "API client with type safety",
+        "Configuration management system",
+      ],
+      assignments: {
+        preRead: "TypeScript introduction, basic types, and setup process",
+        postRead: "Advanced TypeScript patterns, decorators, and tooling",
+        liveAssignments: [
+          "Convert JavaScript project to TypeScript",
+          "Create typed API interfaces",
+          "Build reusable typed components",
+        ],
+        pdfNotes: "TypeScript handbook with practical examples and migration guide",
+      },
+    },
+    {
+      id: "react-development",
+      title: "React Development",
+      description: "Build modern web applications with React, hooks, and state management",
+      duration: "4-5 weeks",
+      icon: "react",
+      topics: [
+        "React components and JSX",
+        "Hooks (useState, useEffect, custom hooks)",
+        "State management and context API",
+        "React Router for navigation",
+        "Performance optimization techniques",
+        "Testing React components",
+      ],
+      projects: [
+        "YouTube clone with API",
+        "E-commerce shopping cart",
+        "Blog application with routing",
+        "Real-time dashboard",
+      ],
+      assignments: {
+        preRead: "React concepts, component lifecycle, virtual DOM understanding",
+        postRead: "Advanced React patterns, performance optimization, testing strategies",
+        liveAssignments: [
+          "Build reusable component library",
+          "Implement state management system",
+          "Create dynamic routing application",
+        ],
+        pdfNotes: "React development guide with hooks, patterns, and best practices",
+      },
+    },
+    {
+      id: "project-portfolio",
+      title: "Project Portfolio",
+      description: "Build impressive projects for your developer portfolio and GitHub",
+      duration: "2-3 weeks",
+      icon: "projects",
+      topics: [
+        "Portfolio website design and development",
+        "Project documentation and README files",
+        "Code organization and best practices",
+        "Deployment strategies (Vercel, Netlify)",
+        "Performance optimization techniques",
+        "SEO and accessibility implementation",
+      ],
+      projects: [
+        "Professional portfolio website",
+        "Full-stack MERN application",
+        "Custom CSS component library",
+        "Open source contribution project",
+      ],
+      assignments: {
+        preRead: "Portfolio design principles, project documentation standards",
+        postRead: "Advanced deployment techniques, performance monitoring",
+        liveAssignments: [
+          "Design personal brand identity",
+          "Create project showcase system",
+          "Implement contact and feedback forms",
+        ],
+        pdfNotes: "Portfolio development guide with design templates and deployment checklist",
+      },
+    },
+    {
+      id: "online-presence",
+      title: "Online Presence & Branding",
+      description: "Build your professional online presence and personal brand as a developer",
+      duration: "1-2 weeks",
+      icon: "presence",
+      topics: [
+        "Professional LinkedIn profile optimization",
+        "GitHub profile and repository management",
+        "Technical blog writing and content creation",
+        "Social media presence for developers",
+        "Networking and community engagement",
+        "Personal branding strategies",
+      ],
+      projects: [
+        "Optimized LinkedIn profile",
+        "Professional GitHub showcase",
+        "Technical blog setup",
+        "Developer portfolio website",
+      ],
+      assignments: {
+        preRead: "Personal branding basics, social media best practices for developers",
+        postRead: "Content marketing strategies, community building techniques",
+        liveAssignments: [
+          "Create compelling developer story",
+          "Write technical blog posts",
+          "Engage with developer communities",
+        ],
+        pdfNotes: "Developer branding guide with templates and growth strategies",
+      },
+    },
+    {
+      id: "git-github",
+      title: "Git, GitHub & Open Source",
+      description: "Master version control, collaboration, and open source contribution",
+      duration: "2 weeks",
+      icon: "git",
+      topics: [
+        "Git fundamentals and workflow",
+        "GitHub collaboration and pull requests",
+        "Open source contribution process",
+        "Code review best practices",
+        "Branch management strategies",
+        "Continuous integration basics",
+      ],
+      projects: [
+        "Collaborative project with team",
+        "Open source contribution",
+        "Personal project with CI/CD",
+        "Code review and mentoring",
+      ],
+      assignments: {
+        preRead: "Version control concepts, Git basics, GitHub introduction",
+        postRead: "Advanced Git workflows, team collaboration strategies",
+        liveAssignments: [
+          "Contribute to open source project",
+          "Set up collaborative workflow",
+          "Create comprehensive project documentation",
+        ],
+        pdfNotes: "Git and GitHub mastery guide with workflow examples and commands reference",
+      },
+    },
+    {
+      id: "career-preparation",
+      title: "Career Preparation",
+      description: "Prepare for job interviews, freelancing, and professional development",
+      duration: "2 weeks",
+      icon: "career",
+      topics: [
+        "Technical interview preparation",
+        "Resume and cover letter optimization",
+        "Freelancing and client management",
+        "Salary negotiation strategies",
+        "Continuous learning and skill development",
+        "Industry trends and career paths",
+      ],
+      projects: [
+        "Interview preparation portfolio",
+        "Freelance project proposal",
+        "Professional resume and LinkedIn",
+        "Mock interview sessions",
+      ],
+      assignments: {
+        preRead: "Job market analysis, interview preparation strategies",
+        postRead: "Career growth planning, skill assessment techniques",
+        liveAssignments: [
+          "Practice technical interviews",
+          "Create freelance service offerings",
+          "Develop career growth plan",
+        ],
+        pdfNotes: "Career preparation handbook with interview questions and industry insights",
+      },
+    },
+    {
+      id: "ai-tools-integration",
+      title: "AI Tools for Developers",
+      description: "Master AI tools to accelerate your development workflow and write better code",
+      duration: "1-2 weeks",
+      icon: "javascript",
+      topics: [
+        "ChatGPT for code generation and debugging",
+        "GitHub Copilot for intelligent code completion",
+        "Claude for code review and optimization",
+        "AI-powered CSS and HTML generation",
+        "Prompt engineering for developers",
+        "AI tools for documentation and testing",
+      ],
+      projects: [
+        "Build a project using AI assistance",
+        "Create documentation with AI tools",
+        "Optimize existing code with AI suggestions",
+        "Generate responsive layouts with AI",
+      ],
+      assignments: {
+        preRead: "Introduction to AI tools for developers, prompt engineering basics",
+        postRead: "Advanced AI workflows, productivity optimization techniques",
+        liveAssignments: [
+          "Use ChatGPT to build a complete component",
+          "Optimize CSS with AI assistance",
+          "Generate project documentation with AI",
+        ],
+        pdfNotes: "AI tools handbook with prompts and best practices for developers",
+      },
+    },
+  ],
+}
+
+export const testimonials = [
+  {
+    name: "Rahul Sharma",
+    role: "Frontend Developer at TCS",
+    content:
+      "The live classes were amazing! Pritam's teaching style is very clear and the hands-on projects helped me land my first job.",
+    rating: 5,
+  },
+  {
+    name: "Priya Singh",
+    role: "Full Stack Developer",
+    content:
+      "Best investment I made for my career. The comprehensive curriculum and live doubt resolution made learning so much easier.",
+    rating: 5,
+  },
+  {
+    name: "Amit Kumar",
+    role: "React Developer at Startup",
+    content:
+      "From zero to hero in web development. The projects we built are now part of my portfolio and helped me get multiple job offers.",
+    rating: 5,
+  },
+]
+
+export const returnPolicy = {
+  title: "Return & Refund Policy",
+  lastUpdated: "January 2025",
+  sections: [
+    {
+      title: "Refund Eligibility",
+      content: [
+        "Full refund available within 7 days of enrollment if no live classes have been attended",
+        "50% refund available within 14 days if less than 25% of the course has been completed",
+        "No refund after 30 days or if more than 50% of the course content has been accessed",
+        "Medical emergencies and exceptional circumstances will be considered on a case-by-case basis",
+      ],
+    },
+    {
+      title: "Refund Process",
+      content: [
+        "Submit refund request via email or WhatsApp with your enrollment details",
+        "Refund requests are processed within 5-7 business days",
+        "Refunds are issued to the original payment method",
+        "Processing fees (if any) may be deducted from the refund amount",
+      ],
+    },
+    {
+      title: "Course Transfer Policy",
+      content: [
+        "Students can transfer to the next batch within 30 days of enrollment",
+        "One-time batch transfer is allowed without additional charges",
+        "Transfer requests must be made at least 7 days before the new batch starts",
+        "Subject to availability in the requested batch",
+      ],
+    },
+    {
+      title: "What's Not Refundable",
+      content: [
+        "Course materials and PDF notes once downloaded",
+        "Completed assignments and project feedback",
+        "One-on-one mentoring sessions already conducted",
+        "Certificate fees (if applicable)",
+      ],
+    },
+  ],
+  contact: {
+    email: "pritamvr9@gmail.com",
+    phone: "+91-7004905025",
+    whatsapp: "https://wa.me/917004905025",
+  },
+}
