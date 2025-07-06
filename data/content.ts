@@ -203,25 +203,29 @@ export const aboutContent = {
     },
     experience: [
       {
-        position: "Senior Frontend Developer",
-        company: "Tech Solutions Inc.",
-        duration: "2022 - Present",
+        position: "Software Developer",
+        company: "Sellermate.ai",
+        duration: "01/2024 – present",
         achievements: [
-          "Led development of 5+ major web applications using React and TypeScript",
-          "Mentored junior developers and conducted code reviews",
-          "Implemented AI-powered features that improved user engagement by 40%",
-          "Optimized application performance resulting in 60% faster load times",
+          "Collaborated closely with the backend team to define APIs and ensure smooth feature integration.",
+          "Built dynamic summary rows in MUI tables to show column-wise totals based on active filters",
+          "Developed a Campaign Manager to handle bulk operations on campaigns, targets, and search terms, with robust error handling — tested and optimized to support 5,000+ operations seamlessly",
+          "Integrated ApexCharts for visualizing insights via interactive graphs and synced data tables",
+          "Implemented custom filters aligned with MUI’s default filtering system for advanced table filtering",
+          "Created UI to showcase AI-driven recommendations for user actions",
+          "Solved several critical production bugs related to UI, performance, and state management"
         ],
       },
       {
-        position: "Full Stack Developer",
-        company: "Digital Innovations Ltd.",
-        duration: "2020 - 2022",
+        position: "Frontend Developer",
+        company: "Ringover",
+        duration: "10/2022 – 12/2023",
         achievements: [
-          "Developed and maintained 10+ client websites using modern web technologies",
-          "Collaborated with design teams to create pixel-perfect user interfaces",
-          "Integrated third-party APIs and payment gateways",
-          "Reduced bug reports by 50% through comprehensive testing practices",
+          "Developed responsive web applications using React.js and modern JavaScript",
+          "Collaborated with cross-functional teams for high-quality user experiences",
+          "Optimized application performance and implemented code quality best practices",
+          "Integrated APIs and worked with backend teams for seamless data flow",
+          "Solved several critical production bugs related to UI, performance, and state management"
         ],
       },
     ],
