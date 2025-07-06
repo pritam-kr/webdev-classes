@@ -9,7 +9,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WebDev Live Classes - Learn Web Development with Live Interactive Sessions",
+  title: "Devlift - Learn Web Development with Live Interactive Sessions",
   description:
     "Master HTML, CSS, JavaScript, React through live online classes via Google Meet. Small batches, personalized attention, and hands-on projects. Enroll for ₹10,000.",
     generator: 'v0.dev'

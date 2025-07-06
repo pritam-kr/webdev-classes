@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 font-bold text-lg mb-4">
               <Code2 className="w-6 h-6 text-blue-400" />
-              WebDev Classes
+              Devlift
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Transform your career with live interactive web development classes. Learn from industry experts and build
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 WebDev Live Classes. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Devlift. All rights reserved.</p>
         </div>
       </div>
     </footer>

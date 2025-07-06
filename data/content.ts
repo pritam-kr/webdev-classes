@@ -187,7 +187,7 @@ export const learningPath = [
 ]
 
 export const aboutContent = {
-  title: "About WebDev Live Classes",
+  title: "About Devlift",
   description:
     "We are passionate about transforming aspiring developers into industry-ready professionals through live, interactive web development education.",
   mission:
@@ -236,7 +236,7 @@ export const contactInfo = {
     github: "https://github.com/pritam-kr",
     linkedin: "https://www.linkedin.com/in/pritam-kumar-0ab3431bb/",
     twitter: "https://x.com/Pritamkr_",
-    portfolio: "https://pritamkumar.dev",
+    portfolio: "https://pritam-kumar.vercel.app/",
   },
 }
 
