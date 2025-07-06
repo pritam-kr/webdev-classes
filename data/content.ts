@@ -194,7 +194,7 @@ export const aboutContent = {
     "Our mission is to provide high-quality, accessible web development education that bridges the gap between learning and real-world application, preparing students for successful careers in tech.",
   instructor: {
     name: "Pritam Kumar",
-    bio: "Experienced software developer and educator with 5+ years in the industry. Passionate about teaching modern web development and helping students achieve their career goals.",
+    bio: "Experienced software developer and educator with 2+ years in the industry. Passionate about teaching modern web development and helping students achieve their career goals.",
     social: {
       portfolio: "https://pritamkumar.dev",
       github: "https://github.com/pritam-kr",
