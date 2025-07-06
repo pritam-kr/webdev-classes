@@ -72,11 +72,11 @@ export default function AboutPage() {
                       <CardContent className="p-6">
                         <div className="flex justify-between items-start mb-4">
                           <div>
-                            <h5 className="text-lg font-semibold text-gray-900">{exp.position}</h5>
+                            <h5 className="text-lg font-semibold text-gray-900">{exp?.position}</h5>
                             <p className="text-blue-600 font-medium">{exp.company}</p>
                           </div>
                           <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                            {exp.duration}
+                            {exp?.duration}
                           </span>
                         </div>
 
