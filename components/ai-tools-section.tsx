@@ -113,7 +113,7 @@ export default function AIToolsSection() {
                 <div className="bg-white/10 p-4 rounded-lg mb-6">
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-purple-100">
                     <div>🎯 AI-assisted coding in every module</div>
-                    <div>💰 Only ₹8,000 for complete AI training</div>
+                    <div>💰 Only ₹6,000 for complete AI training</div>
                     <div>🏆 Industry-first AI integration course</div>
                     <div>🚀 Future-proof your development skills</div>
                   </div>

@@ -225,7 +225,7 @@ export default function AssignmentsPage() {
                 <h3 className="font-semibold mb-2">What makes our course special:</h3>
                 <div className="grid md:grid-cols-2 gap-2 text-sm text-blue-100">
                   <div>✨ AI tools integration in every module</div>
-                  <div>🎯 Only ₹8,000 for complete program</div>
+                  <div>🎯 Only ₹6,000 for complete program</div>
                   <div>👨‍💻 Live coding with industry expert</div>
                   <div>🏗️ 10+ portfolio-ready projects</div>
                   <div>💼 Job placement assistance</div>
@@ -239,7 +239,7 @@ export default function AssignmentsPage() {
                   rel="noopener noreferrer"
                   className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
                 >
-                  Enroll Now - Only ₹8,000!
+                  Enroll Now - Only ₹6,000!
                 </a>
                 <a
                   href="/roadmap"
