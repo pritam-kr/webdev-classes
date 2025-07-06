@@ -3,7 +3,7 @@ export const courses = [
     id: "complete-web-development",
     title: "Complete Program",
     description: "Master HTML, CSS, JavaScript, React, and AI tools in our comprehensive live program",
-    price: "₹6,000",
+    price: "₹5,999",
     originalPrice: "₹10,000",
     duration: "4-5 months",
     students: "500+",
